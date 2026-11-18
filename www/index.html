@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>দৈনিক হাজিরা ও দায়িত্ব</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f6;--card:#fff;--tx:#101c2e;--mu:#5f6c80;--bd:#dde3ec;--ink:#0f2742;--inkx:#eef4fc;--sun:#ffb02e;--wa:#128c4a;--ok:#127a46;--okb:#d8f2e3;--no:#b8312a;--nob:#fbe0dd;--lv:#9a5b00;--lvb:#fbe9c1;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0d141d;--card:#162130;--tx:#e9eff7;--mu:#93a1b5;--bd:#25344a;--ink:#1c3a5e;--inkx:#f0f5fc;--sun:#ffc24d;--wa:#1a9c5a;--ok:#5fd69a;--okb:#143a2a;--no:#ff948a;--nob:#432220;--lv:#f2bb62;--lvb:#40300f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0d141d;--card:#162130;--tx:#e9eff7;--mu:#93a1b5;--bd:#25344a;--ink:#1c3a5e;--inkx:#f0f5fc;--sun:#ffc24d;--wa:#1a9c5a;--ok:#5fd69a;--okb:#143a2a;--no:#ff948a;--nob:#432220;--lv:#f2bb62;--lvb:#40300f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.5 'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+button{cursor:pointer}button:active{transform:scale(.97)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--bg)}
+.brand{display:flex;align-items:center;gap:9px;font-size:18px}
+.logo{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--ink);color:var(--inkx);font-weight:700;font-size:15px}
+.tabs{display:flex;background:var(--card);border:1px solid var(--bd);border-radius:11px;padding:3px}
+.tabs button{border:0;background:none;color:var(--mu);font:inherit;font-weight:500;padding:4px 14px;border-radius:8px}
+.tabs button.on{background:var(--ink);color:var(--inkx)}
+main{max-width:560px;margin:0 auto;padding:4px 16px 28px}
+.hasbar main{padding-bottom:150px}
+.hero{background:var(--ink);color:var(--inkx);border-radius:20px;padding:14px 14px 14px;margin-bottom:6px}
+.hnav{display:flex;align-items:center;justify-content:space-between}
+.hnav button{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.28);background:none;color:inherit;font-size:20px;line-height:1}
+.hnav div{text-align:center;line-height:1.3}.hnav small{display:block;opacity:.7;font-size:13px}.hnav b{font-size:17px}
+.shift{display:flex;align-items:center;gap:12px;margin:14px 0 0;padding:12px;border-radius:14px;background:rgba(255,255,255,.1)}
+.sun{width:46px;height:46px;border-radius:50%;background:var(--sun);display:grid;place-items:center;font-size:22px;flex:none;color:#5a3600}
+.shift small{display:block;opacity:.75;font-size:13px;line-height:1.3}.shift strong{font-size:24px;line-height:1.25}
+.chg{margin-left:auto;border:1px solid rgba(255,255,255,.32);background:none;color:inherit;border-radius:20px;padding:4px 13px;font:inherit;font-size:14px}
+.pm{margin:6px 2px 0;opacity:.75;font-size:14px}
+.stats{display:flex;gap:8px;margin-top:12px}
+.stats div{flex:1;text-align:center;border-radius:12px;padding:6px 4px;background:rgba(255,255,255,.1)}
+.stats b{display:block;font-size:22px;line-height:1.25}.stats small{font-size:13px;opacity:.85}
+.sp{color:#86e6ae}.sa{color:#ff9f96}.sl{color:#ffd47f}
+.sec{margin:18px 2px 8px;font-size:15px;font-weight:700;display:flex;justify-content:space-between;align-items:center}
+.p{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px;margin-bottom:10px}
+.ph{display:flex;align-items:center;gap:11px;margin-bottom:10px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;flex:none}
+.ph b{display:block;line-height:1.3}.ph small{color:var(--mu);font-size:13px}
+.tag{margin-left:auto;font-size:13px;background:var(--lvb);color:var(--lv);padding:2px 10px;border-radius:20px;white-space:nowrap}
+.seg3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.seg3 button{padding:9px 4px;border-radius:11px;border:1px solid var(--bd);background:none;color:var(--mu);font:inherit;font-weight:500}
+.seg3 button.on.P{background:var(--okb);color:var(--ok);border-color:var(--ok)}
+.seg3 button.on.A{background:var(--nob);color:var(--no);border-color:var(--no)}
+.seg3 button.on.L{background:var(--lvb);color:var(--lv);border-color:var(--lv)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px 14px;margin-bottom:12px}
+.card.tight{padding:2px 14px}
+.tm{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;color:var(--mu);font-size:14px}
+.tm input{width:auto;padding:6px 10px}
+.tm input.need{border-color:var(--no)}
+.card h3{margin:0 0 6px;font-size:16px}
+.dr{display:flex;align-items:center;gap:11px;padding:11px 0;border-top:1px solid var(--bd)}.dr:first-child{border-top:0}
+.pl{width:40px;height:40px;border-radius:12px;background:var(--bg);display:grid;place-items:center;font-size:20px;flex:none}
+.dr small{display:block;color:var(--mu);font-size:13px;line-height:1.2}
+.who{margin-left:auto;font-weight:700;text-align:right}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--bd)}
+.row.h{padding-top:0;border-top:0}
+button.g{border:1px solid var(--bd);background:none;color:var(--tx);border-radius:20px;padding:4px 13px;font:inherit;font-size:14px}
+.mu{color:var(--mu);font-size:14px;margin:4px 0}
+input{width:100%;padding:10px 12px;border:1px solid var(--bd);border-radius:12px;background:var(--bg);color:var(--tx);font:inherit}
+.add{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.add button{white-space:nowrap}.add input{flex:1;min-width:130px}.row .ar{width:44%;padding:6px 10px;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:6px 0}
+.chips button{padding:4px 12px;border:1px solid var(--bd);border-radius:20px;background:none;color:var(--mu);font:inherit;font-size:14px}
+.chips button.on{background:var(--ink);color:var(--inkx);border-color:var(--ink)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:12;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--bd)}
+.bar:empty{display:none}
+.bar>p{max-width:560px;margin:0 auto 8px;color:var(--lv);font-size:14px}
+.bb{max-width:560px;margin:0 auto;display:flex;gap:8px}
+.bb button{padding:13px 16px;border-radius:14px;font:inherit;font-weight:700;border:0}
+.sendm{flex:1;background:var(--wa);color:#fff}
+.bb .sendd{background:var(--card);color:var(--tx);border:1px solid var(--bd)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="top"><div class="brand"><span class="logo">খা</span><b>দৈনিক খাতা</b></div><nav class="tabs"><button id="t1" onclick="go('today')">আজ</button><button id="t2" onclick="go('set')">সেটিংস</button></nav></header>
+<main id="app"></main>
+<div id="bar" class="bar"></div>
+<script>
+const KEY='daily-mgr-v1';
+let S={staff:[],duties:[{id:'d1',name:'বাসা পরিষ্কার',pool:[]},{id:'d2',name:'রান্নাঘর পরিষ্কার',pool:[]},{id:'d3',name:'বাথরুম পরিষ্কার (দোকান)',pool:[]}],manager:'',att:{},am:{},tm:{},quota:2,rt:'21:00',rn:true};
+try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+const rn={'বাসা পরিষ্কার':'বাসা: ঘর পরিষ্কার','রান্নাঘর পরিষ্কার':'বাসা: রান্নাঘর পরিষ্কার','বাথরুম পরিষ্কার (দোকান)':'দোকান: বাথরুম পরিষ্কার'};
+S.duties.forEach(d=>{if(rn[d.name])d.name=rn[d.name]});
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}clearTimeout(window._nt);window._nt=setTimeout(()=>notify(false),1500)};
+const $=id=>document.getElementById(id);
+const uid=()=>'x'+Math.random().toString(36).slice(2,8);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let tab='today',day=new Date();
+const dk=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const ds=()=>day.toLocaleDateString('bn-BD',{weekday:'long',day:'numeric',month:'long'});
+const att=()=>S.att[dk(day)]||{};
+function go(t){tab=t;render()}
+function shift(n){day=new Date(day.getFullYear(),day.getMonth(),day.getDate()+n);render()}
+function setA(id,s){const k=dk(day);S.att[k]=S.att[k]||{};S.att[k][id]=S.att[k][id]===s?'':s;save();render()}
+function allP(){const k=dk(day);S.att[k]=S.att[k]||{};S.staff.forEach(p=>S.att[k][p.id]='P');save();render()}
+function dutyAll(){
+  const a=att(),b=Math.floor(Date.UTC(day.getFullYear(),day.getMonth(),day.getDate())/864e5),used=[];
+  const pick=(pool,s,f)=>{for(let j=0;j<pool.length;j++){const p=pool[(s+j)%pool.length];if(f(p))return p}return null};
+  return S.duties.map((d,i)=>{
+    const pool=S.staff.filter(p=>d.pool.includes(p.id));if(!pool.length)return null;
+    const r=pool[(b+i)%pool.length];
+    used.push(r.id);return r;
+  });
+}
+function duty(d,i){return dutyAll()[i]}
+function dutyOld(d,i){
+  const pool=S.staff.filter(p=>d.pool.includes(p.id));if(!pool.length)return null;
+  const a=att(),base=Math.floor(Date.UTC(day.getFullYear(),day.getMonth(),day.getDate())/864e5)+i;
+  for(let j=0;j<pool.length;j++){const p=pool[(base+j)%pool.length];if(a[p.id]!=='A'&&a[p.id]!=='L')return p}
+  return pool[base%pool.length];
+}
+const bn=n=>(+n).toLocaleString('bn-BD');
+function ok(a,p){return a[p.id]!=='A'&&a[p.id]!=='L'}
+function morning(){
+  const a=att(),k=dk(day),n=S.staff.length;if(!n)return null;
+  const o=S.staff.find(p=>p.id===S.am[k]);if(o)return o;
+  const base=Math.floor(Date.UTC(day.getFullYear(),day.getMonth(),day.getDate())/864e5);
+  return S.staff[base%n];
+  return null;
+}
+function nextAm(){
+  const a=att(),cur=morning(),n=S.staff.length;if(!cur)return;
+  const i=S.staff.findIndex(p=>p.id===cur.id);
+  for(let j=1;j<=n;j++){const p=S.staff[(i+j)%n];{S.am[dk(day)]=p.id;break}}
+  save();render();
+}
+function lv(id){const m=dk(day).slice(0,7);let c=0;for(const k in S.att)if(k.slice(0,7)===m&&S.att[k][id]==='L')c++;return c}
+function tmOf(id){return (S.tm[dk(day)]||{})[id]||''}
+function setT(id,v){const k=dk(day);S.tm[k]=S.tm[k]||{};S.tm[k][id]=v;save();render()}
+function tf(t){const [h,m]=t.split(':').map(Number),w=h<12?'সকাল':h<16?'দুপুর':h<18?'বিকাল':'রাত',d=s=>[...String(s)].map(c=>bn(c)).join('');return w+' '+d(h%12||12)+':'+d(String(m).padStart(2,'0'))}
+function tmRow(id){const v=tmOf(id);return '<label class="tm">আসার সময়<input type="time" class="'+(v?'':'need')+'" value="'+v+'" onchange="setT(\''+id+'\',this.value)"></label>'}
+function tfAr(t){const [h,m]=t.split(':').map(Number);return (h%12||12)+':'+String(m).padStart(2,'0')+' '+(h<12?'صباحًا':h<16?'ظهرًا':h<18?'عصرًا':'مساءً')}
+function mgrAr(){
+  const a=att(),g=s=>S.staff.filter(p=>a[p.id]===s).map(p=>p.ar||p.name),pr=S.staff.filter(p=>a[p.id]==='P');
+  const ln=(ic,l,s)=>ic+' '+l+' ('+g(s).length+'): '+(g(s).length?g(s).join('، '):'لا أحد');
+  const P='✅ الحاضرون ('+pr.length+')'+(pr.length?pr.slice().sort((x,y)=>(tmOf(x.id)||'99').localeCompare(tmOf(y.id)||'99')).map(p=>'\n• '+(p.ar||p.name)+' — '+(tmOf(p.id)?tfAr(tmOf(p.id)):'لم يُسجَّل الوقت')).join(''):': لا أحد');
+  const d=day.toLocaleDateString('ar-SA-u-ca-gregory-nu-latn',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  return '📋 تقرير الحضور — '+d+'\n\n'+P+'\n\n'+ln('❌','الغائبون','A')+'\n\n'+ln('🏖','في إجازة','L');
+}
+function mgrMsg(){
+  const a=att(),g=s=>S.staff.filter(p=>a[p.id]===s).map(p=>p.name);
+  const m=morning(),pr=S.staff.filter(p=>a[p.id]==='P'),am=pr.filter(p=>m&&p.id===m.id).map(p=>p.name),pm=pr.filter(p=>!m||p.id!==m.id).map(p=>p.name);
+  let P='✅ উপস্থিত ('+pr.length+')'+(pr.length?'':': কেউ নেই');
+  P+=pr.slice().sort((x,y)=>(tmOf(x.id)||'99').localeCompare(tmOf(y.id)||'99')).map(p=>'\n• '+p.name+' — '+(tmOf(p.id)?tf(tmOf(p.id)):'সময় লেখা হয়নি')).join('');
+  
+  const line=(ic,l,s)=>ic+' '+l+' ('+g(s).length+'): '+(g(s).length?g(s).join(', '):'কেউ নেই');
+  return '📋 '+ds()+'\n\n'+P+'\n\n'+line('❌','অনুপস্থিত','A')+'\n\n'+line('🏖','ছুটি','L');
+}
+function dutyMsg(){
+  return '🧹 আজকের দায়িত্ব — '+ds()+'\n\n'+S.duties.map((d,i)=>{const p=duty(d,i);return '• '+d.name+': '+(p?p.name:'—')}).join('\n');
+}
+const isNative=()=>!!(window.Capacitor&&Capacitor.isNativePlatform&&Capacitor.isNativePlatform());
+function setRt(v){S.rt=v||'21:00';save()}
+function togRn(){S.rn=!S.rn;save();render()}
+function notifCard(){
+  return '<div class="card"><h3>রিমাইন্ডার</h3>'+(isNative()?'<div class="row h"><span>প্রতিদিনের নোটিফিকেশন</span><button class="g" onclick="togRn()">'+(S.rn?'চালু':'বন্ধ')+'</button></div><div class="row"><span>রাতে কখন জানাবে</span><input type="time" style="width:auto" value="'+S.rt+'" onchange="setRt(this.value)"></div><p class="mu">কে কোন দায়িত্বে আছে আর কাল সকাল ৯টায় কে আসবে, ঠিক সময়ে ফোনে জানাবে। অ্যাপ বন্ধ থাকলেও আসবে।</p>':'<p class="mu">নোটিফিকেশন শুধু ফোনে ইন্সটল করা অ্যাপে (APK) কাজ করে।</p>')+'</div>';
+}
+async function notify(ask){
+  const L=window.Capacitor&&Capacitor.Plugins&&Capacitor.Plugins.LocalNotifications;
+  if(!isNative()||!L)return;
+  try{
+    if(ask){const r=await L.requestPermissions();if(r.display!=='granted')return}
+    const pend=await L.getPending();
+    if(pend.notifications.length)await L.cancel({notifications:pend.notifications.map(n=>({id:n.id}))});
+    if(!S.rn||!S.staff.length)return;
+    const [hh,mm]=S.rt.split(':').map(Number),now=new Date(),list=[],keep=day;
+    for(let i=0;i<30;i++){
+      const at=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i,hh,mm,0);
+      if(at<=now)continue;
+      day=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);
+      const dd=dutyAll(),lines=S.duties.map((x,j)=>x.name+': '+(dd[j]?dd[j].name:'—'));
+      day=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i+1);
+      const m=morning();
+      list.push({id:i+1,title:'আজকের দায়িত্ব সবাইকে জানিয়ে দিন',body:lines.join('\n')+'\nকাল সকাল ৯টায়: '+(m?m.name:'—'),schedule:{at,allowWhileIdle:true}});
+    }
+    day=keep;
+    if(list.length)await L.schedule({notifications:list});
+  }catch(e){}
+}
+function wa(text,num){if(isNative()){location.href='whatsapp://send?'+(num?'phone='+num+'&':'')+'text='+encodeURIComponent(text);return}
+  const a=document.createElement('a');
+  a.href='https://wa.me/'+(num||'')+'?text='+encodeURIComponent(text);
+  a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+}
+function sendMgr(){wa(mgrAr(),S.manager)}
+function sendDuty(){wa(dutyMsg(),'')}
+function setAr(id,v){const p=S.staff.find(x=>x.id===id);if(p){p.ar=v.trim();save()}}
+function addStaff(){
+  const v=$('ns').value.trim();if(!v)return;
+  const id=uid();S.staff.push({id,name:v,ar:($('na').value||'').trim()});S.duties.forEach(d=>d.pool.push(id));save();render();
+}
+function delStaff(id){S.staff=S.staff.filter(p=>p.id!==id);S.duties.forEach(d=>d.pool=d.pool.filter(x=>x!==id));save();render()}
+function addDuty(){const v=$('nd').value.trim();if(!v)return;S.duties.push({id:uid(),name:v,pool:S.staff.map(p=>p.id)});save();render()}
+function delDuty(id){S.duties=S.duties.filter(d=>d.id!==id);save();render()}
+function tp(did,pid){
+  const d=S.duties.find(x=>x.id===did);
+  d.pool=d.pool.includes(pid)?d.pool.filter(x=>x!==pid):d.pool.concat(pid);save();render();
+}
+const isT=()=>dk(day)===dk(new Date());
+const hue=n=>{let h=0;for(const c of n)h=(h*31+c.charCodeAt(0))%360;return h};
+const av=n=>'<span class="av" style="background:hsl('+hue(n)+' 42% 38%)">'+esc(Array.from(n)[0]||'?')+'</span>';
+const split=n=>{const i=n.indexOf(': ');return i<0?['',n]:[n.slice(0,i),n.slice(i+2)]};
+const ic=pl=>pl==='দোকান'?'🏪':pl==='বাসা'?'🏠':'🧹';
+function viewToday(){
+  const a=att(),m=morning(),dd=dutyAll(),c=s=>S.staff.filter(p=>a[p.id]===s).length;
+  let h='<section class="hero"><div class="hnav"><button onclick="shift(-1)" aria-label="আগের দিন">‹</button><div><small>'+(isT()?'আজ':'নির্বাচিত দিন')+'</small><b>'+ds()+'</b></div><button onclick="shift(1)" aria-label="পরের দিন">›</button></div>';
+  if(!S.staff.length)return h+'</section><div class="card"><h3>শুরু করুন</h3><p class="mu">প্রথমে কর্মীদের নাম যোগ করুন।</p><button class="g" onclick="go(\'set\')">কর্মী যোগ করুন</button></div>';
+  h+='<div class="shift"><span class="sun">☀</span><div><small>সকাল ৯টায় আসবেন</small><strong>'+(m?esc(m.name):'—')+'</strong></div><button class="chg" onclick="nextAm()">বদলান</button></div><p class="pm">বাকি সবাই দুপুর ১২টায়</p>'+
+  '<div class="stats"><div><b class="sp">'+bn(c('P'))+'</b><small>উপস্থিত</small></div><div><b class="sa">'+bn(c('A'))+'</b><small>অনুপস্থিত</small></div><div><b class="sl">'+bn(c('L'))+'</b><small>ছুটি</small></div></div></section>';
+  h+='<div class="sec"><span>হাজিরা</span><button class="g" onclick="allP()">সবাই উপস্থিত</button></div>';
+  S.staff.forEach(p=>{
+    const n=lv(p.id);
+    h+='<div class="p"><div class="ph">'+av(p.name)+'<div><b>'+esc(p.name)+'</b><small'+(n>S.quota?' style="color:var(--no)"':'')+'>এ মাসে ছুটি '+bn(n)+'/'+bn(S.quota)+'</small></div>'+(m&&m.id===p.id?'<span class="tag">☀ ৯টা</span>':'')+'</div><div class="seg3">'+
+    [['P','উপস্থিত'],['A','অনুপস্থিত'],['L','ছুটি']].map(([k,l])=>'<button class="'+(a[p.id]===k?'on '+k:'')+'" onclick="setA(\''+p.id+'\',\''+k+'\')">'+l+'</button>').join('')+'</div>'+(a[p.id]==='P'?tmRow(p.id):'')+'</div>';
+  });
+  h+='<div class="sec"><span>পরিষ্কারের দায়িত্ব</span></div><div class="card tight">'+S.duties.map((d,i)=>{
+    const [pl,t]=split(d.name),p=dd[i];
+    return '<div class="dr"><span class="pl">'+ic(pl)+'</span><div><small>'+esc(pl)+'</small>'+esc(t)+'</div><span class="who">'+(p?esc(p.name):'—')+'</span></div>';
+  }).join('')+'</div>';
+  return h;
+}
+function barHtml(){
+  const a=att(),un=S.staff.filter(p=>!a[p.id]).length,nt=S.staff.filter(p=>a[p.id]==='P'&&!tmOf(p.id)).length;
+  return (nt?'<p>🕒 '+bn(nt)+' জনের আসার সময় বাছা হয়নি</p>':'')+(un?'<p>⏳ '+bn(un)+' জনের হাজিরা বাকি, তারা মেসেজে যাবে না</p>':'')+'<div class="bb"><button class="sendm" onclick="sendMgr()">ম্যানেজারকে হাজিরা পাঠান</button><button class="sendd" onclick="sendDuty()">দায়িত্ব পাঠান</button></div>';
+}
+function render(){
+  $('t1').className=tab==='today'?'on':'';$('t2').className=tab==='set'?'on':'';
+  $('app').innerHTML=tab==='today'?viewToday():viewSet();
+  const b=tab==='today'&&S.staff.length?barHtml():'';
+  $('bar').innerHTML=b;document.body.classList.toggle('hasbar',!!b);
+}
+
+function viewSet(){
+  let h='<div class="card"><h3>ম্যানেজারের WhatsApp নম্বর</h3><input inputmode="tel" placeholder="যেমন 9665XXXXXXXX" value="'+esc(S.manager)+'" onchange="S.manager=this.value.replace(/\\D/g,\'\');save()"><p class="mu">দেশের কোডসহ লিখুন, + ছাড়া।</p></div>';
+  h+='<div class="card"><h3>প্রতি মাসে ছুটির দিন (প্রত্যেকের)</h3><input type="number" min="0" value="'+S.quota+'" onchange="S.quota=+this.value||0;save()"></div>'+notifCard()+'<div class="card"><h3>কর্মী</h3>'+S.staff.map(p=>'<div class="row"><span>'+esc(p.name)+'</span><input class="ar" dir="rtl" placeholder="الاسم بالعربية" value="'+esc(p.ar||'')+'" onchange="setAr(\''+p.id+'\',this.value)"><button class="g" onclick="delStaff(\''+p.id+'\')">মুছুন</button></div>').join('')+
+     '<div class="add"><input id="ns" placeholder="নতুন কর্মীর নাম"><input id="na" dir="rtl" placeholder="الاسم بالعربية"><button class="g" onclick="addStaff()">যোগ করুন</button></div></div>';
+  h+='<div class="card"><h3>দায়িত্ব</h3><p class="mu">নামে চাপ দিয়ে ঠিক করুন কে কে এই দায়িত্ব পালা করে করবে।</p>'+S.duties.map(d=>
+     '<div class="row h" style="border-top:1px solid var(--bd);padding-top:10px"><b>'+esc(d.name)+'</b><button class="g" onclick="delDuty(\''+d.id+'\')">মুছুন</button></div><div class="chips">'+
+     S.staff.map(p=>'<button class="'+(d.pool.includes(p.id)?'on':'')+'" onclick="tp(\''+d.id+'\',\''+p.id+'\')">'+esc(p.name)+'</button>').join('')+'</div>').join('')+
+     '<div class="add"><input id="nd" placeholder="নতুন দায়িত্ব"><button class="g" onclick="addDuty()">যোগ করুন</button></div></div>';
+  h+='<p class="mu">তথ্য এই ফোনের ব্রাউজারে জমা থাকে। অন্য ফোনে বা ল্যাপটপে আলাদা দেখাবে।</p>';
+  return h;
+}
+render();notify(true);
+</script>
+</body>
+</html>
